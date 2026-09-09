@@ -17,3 +17,11 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
+tasks.jar {
+    archiveFileName.set("Apportionment.jar")
+
+    manifest {
+        attributes["Main-Class"] = "edu.nd.oose.hw1.Main"
+    }
+}
